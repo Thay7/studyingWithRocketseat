@@ -1,40 +1,41 @@
-function notaEmLetra(score) {
+function notaEmLetra(score) { //função para transformar notas em letras
 
-    let scoreA = score >= 90 && score <= 100
-    let scoreB = score >= 80 && score  <= 89
-    let scoreC = score >= 70 && score <= 79
-    let scoreD = score >= 60 && score <= 69
-    let scoreF = score < 60 && score >= 0
+    let scoreA = score >= 90 && score <= 100 //condicional para A 
+    let scoreB = score >= 80 && score  <= 89 //condicional para B
+    let scoreC = score >= 70 && score <= 79 //condicional para C
+    let scoreD = score >= 60 && score <= 69 //condicional para D
+    let scoreF = score < 60 && score >= 0 //condicional para F
 
-    let scoreFinal
+    let scoreFinal //declaração de variavel de score final
 
-    if (scoreA) {
+    if (scoreA) { //condicional para A
 
-        scoreFinal = 'A'
+        scoreFinal = 'A'//scorefinal será A
 
-    } else if (scoreB) {
+    } else if (scoreB) { //condicional para B
+ 
+        scoreFinal = 'B' //scorefinal será B
 
-        scoreFinal = 'B'
+    } else if (scoreC) { //condicional para C
 
-    } else if (scoreC) {
+        scoreFinal = 'C'//scorefinal será C
 
-        scoreFinal = 'C'
+    } else if (scoreD) { //condicional para D
 
-    } else if (scoreD) {
+        scoreFinal = 'D' //scorefinal será D
 
-        scoreFinal = 'D'
+    } else if (scoreF) { //condicional para F
 
-    } else if (scoreF) {
+        scoreFinal = 'F'//scorefinal será F
 
-        scoreFinal = 'F'
+    } else { //se a nota não for entre 0 e 100 entra aqui
 
-    } else {
-
-        scoreFinal = 'Nota inválida! Insira uma nota de 0 a 100!'
+        scoreFinal = 'Nota inválida! Insira uma nota de 0 a 100!' //apresenta essa mensagem
 
     }
 
-    return scoreFinal
+    return scoreFinal 
+    
 } 
 
 console.log(notaEmLetra(100))
