@@ -35,4 +35,4 @@ const booksByCategory = [
     },
 ];
 
-//contar o numero de categorias e o número de livros em cada categoria
+//contar o numero de categorias e o número de livros em cada categoria teste
