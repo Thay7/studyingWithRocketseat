@@ -68,13 +68,14 @@ const numeroDeAutores = booksByCategory[0].books.length
 
 function booksByAuthor(author) { //inicialização da função
 
-    for (let book of booksByCategory[0].books) { //"for of" para pegar os elementos da posição 1, do elemento "books" do array "booksByCategory" 
+    for (let book of booksByCategory) { //"for of" para pegar os elementos da posição 1, do elemento "books" do array "booksByCategory" 
+    
+         if (booksByCategory[0].books[0].author === author || booksByCategory[1].books[0].author === author) { //se o autor dos elementos que estão armazenados na variavel de controle for 'Augusto Curry' entra aqui
 
-        if (book.author === author) { //se o autor dos elementos que estão armazenados na variavel de controle for 'Augusto Curry' entra aqui
-
-            console.log(`Os livros de ${author} são: ${book.title}`) //imprime o nome do livro do autor especifico
-        }
+             console.log(`Os livros de  são: ${book.books[0].title}`) //imprime o nome do livro do autor especifico
+         }    
     }
 }
 
-booksByAuthor('George S. Clason')
+//booksByCategory.forEach(booksByAuthor)
+(booksByAuthor('Augusto Curry'))
