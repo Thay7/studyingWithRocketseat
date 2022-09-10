@@ -72,7 +72,7 @@ function booksByAuthor(author) { //inicialização da função
 
         if (book.author === author) { //se o autor dos elementos que estão armazenados na variavel de controle for 'Augusto Curry' entra aqui
 
-            console.log(`Os livros de ${author} são: ${book.title}`) //imprime o nome do livro
+            console.log(`Os livros de ${author} são: ${book.title}`) //imprime o nome do livro do autor especifico
         }
     }
 }
