@@ -8,7 +8,7 @@ header {
 }
 
 nav {
-    display: flex; /** para os elementos <a> e <ul> ficarem ao lado um do outro **/
+    display: flex; /** para os elementos <a>, <ul>, <li> e <input> ficarem ao lado um do outro **/
     justify-content: space-between; /**coloca cada um em suas extremidades**/
     align-items: center; /** alinhar tudo no centro **/
 }
