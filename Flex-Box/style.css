@@ -3,14 +3,14 @@
 }
 
 header {
-    padding: 4rem; /**para o nav ficar maior**/
-    background: lightgray; /**so pra ver melhor a pagina**/
+    padding: 4rem; /**para o header ficar maior**/
+    background: lightgray; /**cor de fundo pra ver melhor a pagina**/
 }
 
 nav {
     display: flex; /** para os elementos <a>, <ul>, <li> e <input> ficarem ao lado um do outro **/
-    justify-content: space-between; /**coloca cada um em suas extremidades**/
-    align-items: center; /** alinhar tudo no centro **/
+    justify-content: space-between; /**coloca cada um (<a> e o que está dentro de <ul>) em suas extremidades**/
+    align-items: center; /** alinhar tudo (<a> e o que está dentro de <ul>) no centro **/
 }
 
 ul {
