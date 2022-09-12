@@ -1,0 +1,28 @@
+* {
+    margin: 0;/** zerar margem da pagina**/
+}
+
+header {
+    padding: 4rem; /**para o nav ficar maior**/
+    background: lightgray; /**so pra ver melhor a pagina**/
+}
+
+nav {
+    display: flex; /** para os elementos <a> e <ul> ficarem ao lado um do outro **/
+    justify-content: space-between; /**coloca cada um em suas extremidades**/
+    align-items: center; /** alinhar tudo no centro **/
+}
+
+ul {
+    display: flex; /** pros itens ficarem um ao lado do outro **/
+    list-style: none; /**tirar as listas**/
+    align-items: center;
+    gap: .8rem /** separação entre os elementos **/   
+}
+
+ul li:last-child { /**pegar ultimo elemento **/
+
+    background: black;
+    color: white;
+    padding: .8rem;
+}
