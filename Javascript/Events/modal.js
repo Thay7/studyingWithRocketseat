@@ -22,3 +22,5 @@ document.addEventListener('keydown', function(event) { //o ESC lê na tela intei
     }
 
 })
+
+//ver documentação MDN DOM
