@@ -28,7 +28,28 @@ process.stdin.on("data", data => { //On é o listener para receber os dados digi
 
     } else { //quando o tamanho do array de respostas for igual ao tamanho do array de perguntas 
 
-        console.log(answers) //escreva o array de respostas no console
         process.exit() //e encerre o processo
     }
 })
+
+process.on('exit', () => { //quando o exit for rodado, o process irá ouvir e excutar a função de callback a seguir
+
+    console.log(` 
+    Bacana Thay!
+
+    O que você aprendeu hoje foi:
+    ${answers[0]}
+    
+    O que te aborreceu você poderia melhorar foi:
+    ${answers[1]}
+
+    O que te deixou feliz foi:
+    ${answers[2]}
+
+    Você ajudou ${answers[3]} pessoas hoje!!
+
+    Volte amanhã para novas reflexões
+    
+    `) //será apresentado no console a mensagem acima, respeitando os espaços e quebras de linha pois foi usado o template literals: ` texto ${dado} texto`
+
+}) 
