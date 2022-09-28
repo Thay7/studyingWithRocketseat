@@ -7,36 +7,39 @@ app.set("view engine", "ejs")//falando pro express que usarei o ejs como ferrame
 
 
 app.get("/", function (req, res) { //criando rota referente ao nome do meu site "/"
-    const items = [
+    const items = [ //array criado para ser renderizado no html
         {
             title: "D",
-             message: "Desenvolver aplicações/serviços de forma fácil"
+             message: "esenvolver aplicações/serviços de forma fácil"
         },
         {
             title: "E",
-            message: "EJS usa Javascrip para renderizar HTML"
+            message: "JS usa Javascrip para renderizar HTML"
         },
         {
             title: "M",
-            message: "Muito fácil de usar"
+            message: "uito fácil de usar"
         },
         {
             title: "A",
-            message: "Amorzinho"
+            message: "morzinho"
         },
         {
             title: "I",
-            message: "install ejs"
+            message: "nstall ejs"
         },
         {
             title: "S",
-            message: "Simples"
+            message: "intaxe imples"
         }
     ]
 
-    res.render("pages/index", {
-        qualitys: items, 
-    }) //vou dar de resposta para essa rota: renderizar o index
+    const subtitle = "Uma linguagem de modelagem para criação de páginas html utilizando Savascript"
+
+    res.render("pages/index", { //vou dar de resposta para essa rota: renderizar o index
+        qualitys: items, //passando o array para o objeto qualitys
+        subtitle: subtitle,
+    }) 
 }) 
 
 app.get("/sobre", function (req, res) { //rota para pagina about
