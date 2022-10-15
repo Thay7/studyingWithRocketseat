@@ -1,1 +1,1 @@
-# Exercicios do projeto Discorver - Trilhar Fundamentar da Rocketseat!
+# Exercicios do projeto Discorver - Trilhar Fundamentar e Especializar da Rocketseat!
