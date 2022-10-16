@@ -1,4 +1,4 @@
-//forma de enviar informações atraves da rota
+//forma de enviar informações(params) atraves da rota
 
 //criando o server
 const express = require('express') //puxando o modulo express e colocando dentro da variavel 
@@ -11,4 +11,9 @@ app.listen('3000') //ouvindo a porta do navegador para quando abrirmos ela no na
 //o use é um metodo que usamos para fazer o middleware
 app.use(express.json()) //puxando o express sem estar inicializado, pois precisamos buscar o json dentro dele
 
-app.route('/').get((req, res) => res.send("ola"))
+//enviando a variavel nome pela rota
+app.route('/:variavel').get((req, res) => res.send(req.params.variavel)) //dando um print na variavel pelo res.send()
+//com o codigo acima, posso ir no navegador e colocar qualquer coisa após a barra que entrará nessa variavel e será mostrado na tela
+
+//criando rota de exemplo com duas barras
+app.route("/identidade/:nome").get((req, res) => res.send(req.params.nome))
